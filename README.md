@@ -1,1 +1,1 @@
-<h2 align="left">Hello, World!</h2>
+Hello, World!
