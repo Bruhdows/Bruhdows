@@ -18,11 +18,11 @@ jobs:
 
       - name: Update README
         uses: muesli/markscribe@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          wakatime_token: ${{ secrets.WAKATIME_API_KEY }}
-          template: "templates/README.md.tpl"
-          output: "README.md"
+          args: "-template templates/README.md.tpl -output README.md"
 
       - name: Commit changes
         run: |
