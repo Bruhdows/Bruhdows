@@ -23,7 +23,6 @@ jobs:
         uses: taciturnaxolotl/markscribe@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
         with:
           args: "TEMPLATE.md.tpl README.md"
 
