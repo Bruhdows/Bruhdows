@@ -8,7 +8,7 @@ on:
     branches:
       - main
     paths:
-      - 'templates/README.md.tpl'
+      - 'TEMPLATE.md.tpl'
 
 permissions:
   contents: write
@@ -25,7 +25,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
         with:
-          args: "templates/README.md.tpl README.md"
+          args: "TEMPLATE.md.tpl README.md"
 
       - name: Commit changes
         run: |
