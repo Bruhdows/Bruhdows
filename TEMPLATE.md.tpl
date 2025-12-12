@@ -14,7 +14,11 @@ Passionate about clean, configurable code and performance optimization.
 
 ## 📊 Coding Activity
 
+```text
 {{ wakatimeDoubleCategoryBar "💾 Languages:" wakatimeData.Languages "💼 Projects:" wakatimeData.Projects 5 }}
+
+Total: {{ wakatimeData.HumanReadableTotal }}
+```
 
 ---
 
