@@ -18,7 +18,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: charmbracelet/readme-scribe@master
+      - uses: taciturnaxolotl/readme-scribe@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
