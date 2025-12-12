@@ -3,14 +3,10 @@
 
 Passionate about clean, configurable code and performance optimization.
 
----
-
 ## 💼 About Me
 
 - 🎯 **Current Focus:** Building and scaling **[Boxhunt.PL](https://discord.gg/boxhunt)** - a custom Minecraft server with 14k Discord community members
 - 🧪 **Learning:** C++ and Advanced Data Structures & Algorithms
-
----
 
 ## 🛠️ Technical Skills
 
@@ -21,8 +17,6 @@ Passionate about clean, configurable code and performance optimization.
 | **Databases** | ![Skills](https://skillicons.dev/icons?i=mongodb,redis,mysql) |
 | **Tools & Platforms** | ![Skills](https://skillicons.dev/icons?i=git,github,vite,figma,maven,gradle) |
 
----
-
 ## 📫 Get In Touch
 
 I'm always interested in discussing new opportunities, collaboration, or interesting technical challenges.
@@ -31,13 +25,9 @@ I'm always interested in discussing new opportunities, collaboration, or interes
 - **📧 Email:** contact@bruhdows.com  
 - **🌐 Portfolio:** [bruhdows.com](https://bruhdows.com/)
 
----
-
 ## 🐍 Contribution Activity
 
 ![Snake animation](https://raw.githubusercontent.com/Bruhdows/Bruhdows/output/github-contribution-grid-snake-dark.svg)
-
----
 
 <div align="center">
   
