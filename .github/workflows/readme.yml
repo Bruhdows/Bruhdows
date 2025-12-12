@@ -10,6 +10,9 @@ on:
     paths:
       - 'templates/README.md.tpl'
 
+permissions:
+  contents: write
+
 jobs:
   update:
     runs-on: ubuntu-latest
@@ -22,7 +25,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
         with:
-          args: "-template templates/README.md.tpl -output README.md"
+          args: "templates/README.md.tpl README.md"
 
       - name: Commit changes
         run: |
