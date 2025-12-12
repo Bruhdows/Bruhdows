@@ -12,10 +12,10 @@ Passionate about clean, configurable code and performance optimization.
 
 | Category | Technologies |
 |----------|-------------|
-| **Languages** | ![Skills](https://skillicons.dev/icons?i=java,kotlin,python,ts,js,html,css) |
-| **Frameworks** | ![Skills](https://skillicons.dev/icons?i=react,nodejs,express) |
-| **Databases** | ![Skills](https://skillicons.dev/icons?i=mongodb,redis,mysql) |
-| **Tools & Platforms** | ![Skills](https://skillicons.dev/icons?i=git,github,vite,figma,maven,gradle) |
+| **Languages** | <img src="https://skillicons.dev/icons?i=java,kotlin,python,ts,js,html,css" height="32" /> |
+| **Frameworks** | <img src="https://skillicons.dev/icons?i=react,nodejs,express" height="32" /> |
+| **Databases** | <img src="https://skillicons.dev/icons?i=mongodb,redis,mysql" height="32" /> |
+| **Tools & Platforms** | <img src="https://skillicons.dev/icons?i=git,github,vite,figma,maven,gradle" height="32" /> |
 
 ## 📫 Get In Touch
 
