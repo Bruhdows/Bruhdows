@@ -1,35 +1,35 @@
 name: Update README
 
 on:
-  schedule:
-    - cron: "0 */6 * * *"
-  workflow_dispatch:
   push:
     branches:
       - main
-    paths:
-      - 'TEMPLATE.md.tpl'
+  schedule:
+    - cron: "0 */1 * * *"
+  workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  update:
+  markscribe:
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
 
-      - name: Update README
-        uses: taciturnaxolotl/markscribe@master
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: charmbracelet/readme-scribe@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
         with:
-          args: "TEMPLATE.md.tpl README.md"
+          template: "templates/README.md.tpl"
+          writeTo: "README.md"
 
-      - name: Commit changes
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add README.md
-          git diff --quiet && git diff --staged --quiet || git commit -m "Update README with latest stats"
-          git push
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Update generated README
+          branch: main
+          commit_user_name: readme-scribe
+          commit_user_email: actions@github.com
+          commit_author: readme-scribe <actions@github.com>
