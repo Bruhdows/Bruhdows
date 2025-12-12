@@ -14,21 +14,7 @@ Passionate about clean, configurable code and performance optimization.
 
 ## 📊 Coding Activity
 
-### Weekly Development Stats
-<!--START_SECTION:waka-->
-```text
-{{ range .Wakatime.Categories }}
-{{ .Name }}: {{ .Text }}
-{{- end }}
-```
-<!--END_SECTION:waka-->
-
-### Language Breakdown
-```text
-{{ range .Wakatime.Languages | limit 5 }}
-{{ .Name }}: {{ .Text }}
-{{- end }}
-```
+{{ wakatimeDoubleCategoryBar "💾 Languages:" wakatimeData.Languages "💼 Projects:" wakatimeData.Projects 5 }}
 
 ---
 
