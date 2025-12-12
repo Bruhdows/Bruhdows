@@ -1,0 +1,33 @@
+name: Update README
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - 'templates/README.md.tpl'
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Update README
+        uses: muesli/markscribe@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          wakatime_token: ${{ secrets.WAKATIME_API_KEY }}
+          template: "templates/README.md.tpl"
+          output: "README.md"
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add README.md
+          git diff --quiet && git diff --staged --quiet || git commit -m "Update README with latest stats"
+          git push
