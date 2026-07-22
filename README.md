@@ -4,7 +4,7 @@
 
 I build backend systems, multiplayer infrastructure, open-source tooling, and web applications for real businesses.
 
-[Portfolio](https://bruhdows.com) · [Email](mailto:contact@bruhdows.com) · [TwemojiChat](https://github.com/Bruhdows/TwemojiChat)
+[Portfolio](https://bruhdows.com) · [Email](mailto:contact@bruhdows.com)
 
 ---
 
